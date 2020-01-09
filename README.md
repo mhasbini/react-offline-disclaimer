@@ -1,8 +1,6 @@
-This project was bootstrapped with [Create React Library](https://github.com/dimimikadze/create-react-library).
+# react-offline-disclaimer
 
-All library files are located inside **src/lib** folder.
-
-Inside **src/demo** folder, you can test your library while developing.
+TBD
 
 ## Available Scripts
 
@@ -24,15 +22,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 ### `npm publish`
 
 Publishes the library to NPM.
-
-## Typescript
-
-[Adding Typescript support](https://gist.github.com/DimiMikadze/f25e1c5c70fa003953afd40fa9042517)
-
-## Troubleshooting
-
-### Usage of other libraries within your library
-
-- Add the library as a peer dependency in package.json (effectively requiring the calling project to provide this dependency)
-- Add the library as a dev dependency in package.json (effectively allowing this library to successfully build without complaining about not having this dependency)
-- Add the library to the externals config in your webpack.config file(s). By default, only react and react-dom are there, meaning that those are the only two libraries that you can use within your new shared library.
