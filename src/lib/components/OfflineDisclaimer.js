@@ -1,5 +1,5 @@
 import React from "react";
-import { Offline, Online } from "react-detect-offline";
+import { Offline } from "react-detect-offline";
 import Game from "react-chrome-dino";
 import styled from "styled-components"
 
@@ -17,7 +17,7 @@ const Retry = styled.a`
 
 export default () => (
   <Wrapper>
-    <Online>
+    <Offline>
       <Game />
       <h3>There is no Internet connection :(</h3>
       <h3>Try:</h3>
@@ -26,6 +26,6 @@ export default () => (
         <li>Reconnecting to Wi-Fi</li>
       </ul>
        <Retry href="/">Retry</Retry>
-    </Online>
+    </Offline>
   </Wrapper>
 );
